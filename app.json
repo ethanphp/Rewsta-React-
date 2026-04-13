@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "rewsta",
+    "slug": "rewsta",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/logo.jpeg",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-notifications",
+      "expo-secure-store"
+    ],
+    "splash": {
+      "image": "./assets/logo.jpeg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "uk.cofd.x",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver notifications.",
+        "NSCameraUsageDescription": "This app needs access to your camera for video calling.",
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone for audio and video calling.",
+        "NSContactsUsageDescription": "We use your contacts to help you connect with people you know on Rewsta."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.jpeg",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "uk.cofd.x",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c25e35b2-39ac-4321-912c-07c90b01c432"
+      }
+    }
+  }
+}
